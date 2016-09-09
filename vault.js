@@ -13,13 +13,15 @@ module.exports = function() {
       if(keyIndex < 0){
         return null;
       } else {
-        return keyValue(keyIndex);
+        return keyValue[keyIndex];
       }
     }
   };
 
   vault.setValue = function( key, value ) {
-    return null;
+    keyName.push(key);
+    keyValue.push(value);
+
   };
 
 return vault;
